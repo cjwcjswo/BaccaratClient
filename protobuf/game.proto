@@ -15,7 +15,7 @@ message BettingBroadcast {
 
 message BaccaratRoundBroadcast {
     uint32 round = 1;
-    uint32 baccaratType = 2; // 1- 플레이어, 2- 
+    uint32 baccaratType = 2; // 1- 플레이어, 2- 뱅커
     uint32 cardType = 3;
     uint32 cardNum = 4;
 }
