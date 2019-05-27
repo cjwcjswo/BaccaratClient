@@ -1,0 +1,39 @@
+syntax = "proto3";
+package protocol;
+
+message RoomEnterRequest {
+    int32 roomNum = 1;
+}
+
+message RoomEnterResponse {
+    int32 roomNum = 1;
+}
+
+message UserInfo {
+    uint64 sessionUniqueId = 1;
+    string nickname = 2;
+}
+
+message RoomUserListNotify {
+    repeated UserInfo userInfo = 1;
+}
+
+message RoomNewUserInfoBroadcast {
+    UserInfo userInfo = 1;
+}
+
+message RoomChatRequest {
+    string message = 2;
+}
+
+message RoomChatResponse {
+}
+
+message RoomChatBroadcast {
+    string nickname = 1;
+    string message = 2;
+}
+
+message RoomLeaveBroadcast {
+    uint64 sessionUniqueId = 1;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+package protocol;
+
+message BettingRequest {
+    uint32 bettingType = 1;
+}
+
+message BettingResponse {
+}
+
+message BettingBroadcast {
+    uint64 sessionUniqueId = 1;
+    uint32 bettingType = 2;
+}
+
+message BaccaratRoundBroadcast {
+    uint32 round = 1;
+    uint32 baccaratType = 2;
+    uint32 cardType = 3;
+    uint32 cardNum = 4;
+}
+
+message BaccaratResultBroadcast {
+    uint32 playerSum = 1;
+    uint32 bankerSum = 2;
+}

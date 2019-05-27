@@ -1,0 +1,10 @@
+syntax = "proto3";
+package protocol;
+
+message LoginRequest {
+    string nickname = 1;
+}
+
+message LoginResponse {
+    uint64 sessionUniqueId = 1;
+}

@@ -1,0 +1,24 @@
+namespace Protocol
+{
+    public static class PacketId
+    {
+        public const int
+            PACKET_ID_LOGIN_REQ = 701,
+            PACKET_ID_LOGIN_RES = 702,
+            PACKET_ID_ENTER_ROOM_REQ = 1001,
+            PACKET_ID_ENTER_ROOM_RES = 1002,
+            PACKET_ID_ROOM_USER_LIST_NOTIFY = 1003,
+            PACKET_ID_ROOM_NEW_USER_BROADCAST = 1004,
+            PACKET_ID_ROOM_CHAT_REQ = 1006,
+            PACKET_ID_ROOM_CHAT_RES = 1007,
+            PACKET_ID_ROOM_CHAT_BROADCAST = 1008,
+            PACKET_ID_ROOM_LEAVE_BROADCAST = 1009,
+
+            PACKET_ID_GAME_BETTING_START_BROADCAST = 1010,
+            PACKET_ID_GAME_BETTING_REQ = 1011,
+            PACKET_ID_GAME_BETTING_RES = 1012,
+            PACKET_ID_GAME_BETTING_BROADCAST = 1013,
+            PACKET_ID_GAME_ROUND_BROADCAST = 1014,
+            PACKET_ID_GAME_RESULT_BROADCAST = 1015;
+    }
+}
