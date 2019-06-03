@@ -15,8 +15,27 @@ message BettingBroadcast {
 
 message BaccaratRoundBroadcast {
     uint32 round = 1;
-    uint32 baccaratType = 2; // 1- 플레이어, 2- 뱅커
+    // 플레이어 = 1
+    // 뱅커 = 2
+    uint32 baccaratType = 2;
+    //CARD_TYPE_CLUB = 0
+	//CARD_TYPE_DIAMOND = 1
+	//CARD_TYPE_HEART = 2
+	//CARD_TYPE_SPADE = 3
     uint32 cardType = 3;
+    //CARD_NUM_ACE = 1 + iota
+	//CARD_NUM_2
+	//CARD_NUM_3
+	//CARD_NUM_4
+	//CARD_NUM_5
+	//CARD_NUM_6
+	//CARD_NUM_7
+	//CARD_NUM_8
+	//CARD_NUM_9
+	//CARD_NUM_10
+	//CARD_NUM_JACK
+	//CARD_NUM_QUEEN
+	//CARD_NUM_KING
     uint32 cardNum = 4;
 }
 
